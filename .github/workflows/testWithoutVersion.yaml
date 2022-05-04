@@ -1,0 +1,15 @@
+name: Test without version
+
+on:
+  push:
+    branches:    
+      - master
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: Blaze2305/better-aws-iam-authenticator-action@master
+
+    - name: Latest version of AWS IAM Authenticator
+      run: aws-iam-authenticator version

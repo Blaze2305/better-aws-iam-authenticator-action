@@ -1,0 +1,14 @@
+# action.yml
+name: 'Better AWS IAM Authenticator Github Action.'
+description: 'Downloads and sets up the specified version ( defaults to latest ) of AWS IAM Authenticator'
+inputs:
+  version:  # version of AWS IAM Authenticator
+    description: 'Version of the IAM Authenticator'
+    required: false
+    default: 'latest'
+outputs:
+  status: 
+    description: 'Status of the action'
+runs:
+  using: 'node12'
+  main: 'dist/index.js'
