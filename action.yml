@@ -9,6 +9,9 @@ inputs:
 outputs:
   status: 
     description: 'Status of the action'
+branding: 
+  icon: 'activity'
+  color: 'blue'
 runs:
   using: 'node12'
   main: 'dist/index.js'
